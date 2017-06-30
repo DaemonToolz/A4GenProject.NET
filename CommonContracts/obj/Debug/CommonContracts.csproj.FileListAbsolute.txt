@@ -1,0 +1,6 @@
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Debug\CommonContracts.dll.config
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Debug\CommonContracts.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Debug\CommonContracts.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Debug\CommonContracts.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Debug\CommonContracts.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Debug\CommonContracts.pdb

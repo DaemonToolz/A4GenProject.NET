@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AgentWpfClient.App">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.CategorySelection" BaseTypeListCollapsed="true">
+    <Position X="10" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAMAgAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CategorySelection.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.DecipheringPag" BaseTypeListCollapsed="true">
+    <Position X="25" Y="4.5" Width="2" />
+    <AssociationLine Name="OperationDispatcher" Type="AgentWpfClient.DecipherService.OperationDispatcherClient" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.875" Y="8.238" />
+        <Point X="26.875" Y="9.463" />
+        <Point X="27.25" Y="9.463" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAACIACBAAAAICAAAAAAAAAAUAAAABAAgAQCAgAA=</HashCode>
+      <FileName>DecipheringPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="File" />
+      <Field Name="OperationDispatcher" />
+      <Field Name="Updater" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AgentWpfClient.LoadingSpinner" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LoadingSpinner.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAEAAAggAAAAIAAAAABAAAABAAABAgCAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="NavigationPanel" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.OptionsPage" BaseTypeListCollapsed="true">
+    <Position X="25" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAACCIAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAQAgA=</HashCode>
+      <FileName>OptionsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="UserConfiguration" />
+      <Field Name="DefaultProperties" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.UpdateCredentials" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="8" Width="1.75" />
+    <InheritanceLine Type="System.Windows.Controls.Page" ManuallyRouted="true">
+      <Path>
+        <Point X="23.5" Y="2.941" />
+        <Point X="23.5" Y="4.143" />
+        <Point X="22.375" Y="4.143" />
+        <Point X="22.375" Y="8" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAIAAACIACAAgAAAAABAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UpdateCredentials.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TokenGenerator" />
+      <Field Name="UserCredentials" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.DecipheringProgressService.DecipheringProcessUpdaterClient" BaseTypeListCollapsed="true">
+    <Position X="27" Y="12.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipheringProgressService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.DecipherService.ConnectionToken" BaseTypeListCollapsed="true">
+    <Position X="30.75" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAoAIAGAAAgAAAAAAAgAAAAgAAAAJAEAgEgAAIAAAA=</HashCode>
+      <FileName>Connected Services\DecipherService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.DecipherService.InputValidationFaultContract" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAQBAAAAAAAAAgAAAAAAEAAAAAAIAAAA=</HashCode>
+      <FileName>Connected Services\DecipherService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.DecipherService.OperationDispatcherClient" BaseTypeListCollapsed="true">
+    <Position X="27.25" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipherService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.TokenManagementService.TokenGenerationServiceClient" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="11.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.TokenManagementService.TokenValidationServiceClient" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="6.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.Converters.CheckboxConverter" BaseTypeListCollapsed="true">
+    <Position X="10" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\CheckboxConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AgentWpfClient.Integrity.ClientFile">
+    <Position X="28.25" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAASARAAAA=</HashCode>
+      <FileName>Integrity\ClientFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Properties.Resources">
+    <Position X="15.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIBEAAAAQAAAAAAAAAAAQAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Properties.Settings">
+    <Position X="32.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACQAAAAAAAAAAAgAIAAAABABAAQAAAAAAIAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Security.Credentials">
+    <Position X="24" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Security\Credentials.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Security.OverallConfigs">
+    <Position X="30.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAABAAAAAAAAAAAAAEAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Security\OverallConfigs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Security.PasswordProtection">
+    <Position X="13.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Security\PasswordProtection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AgentWpfClient.Validation.EncryptedValidationRules">
+    <Position X="14.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\EncryptedValidationRules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Controls.Page" Collapsed="true">
+    <Position X="22.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AgentWpfClient.DecipheringProgressService.IDecipheringProcessUpdater">
+    <Position X="4.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipheringProgressService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.DecipheringProgressService.IDecipheringProcessUpdaterCallback">
+    <Position X="8.25" Y="6.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Connected Services\DecipheringProgressService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.DecipheringProgressService.IDecipheringProcessUpdaterChannel">
+    <Position X="4.5" Y="6.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipheringProgressService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.DecipherService.IOperationDispatcher">
+    <Position X="0.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipherService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.DecipherService.IOperationDispatcherChannel">
+    <Position X="0.5" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\DecipherService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.TokenManagementService.ITokenGenerationService">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.TokenManagementService.ITokenGenerationServiceChannel">
+    <Position X="4.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.TokenManagementService.ITokenValidationService">
+    <Position X="0.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AgentWpfClient.TokenManagementService.ITokenValidationServiceChannel">
+    <Position X="0.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connected Services\TokenManagementService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

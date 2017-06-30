@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9283fd64-7a5d-479a-a4fd-319b4379d843" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:15330/DecipherService/DecipheringProcessUpdater.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DecipheringProcessUpdater.disco" MetadataType="Disco" ID="08cebcb0-fdfa-45c5-93a2-7e872d65a888" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipheringProcessUpdater.svc?disco" />
+    <MetadataFile FileName="DecipheringProcessUpdater.xsd" MetadataType="Schema" ID="13c0ec50-b260-415c-80dc-3b93733bb763" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipheringProcessUpdater.svc?xsd=xsd1" />
+    <MetadataFile FileName="DecipheringProcessUpdater1.xsd" MetadataType="Schema" ID="4e1ad912-dcd9-41c9-b836-fd4f593bdf1d" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipheringProcessUpdater.svc?xsd=xsd0" />
+    <MetadataFile FileName="DecipheringProcessUpdater.wsdl" MetadataType="Wsdl" ID="dd24a139-4851-4aea-a9e8-40b1ba0364ae" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipheringProcessUpdater.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

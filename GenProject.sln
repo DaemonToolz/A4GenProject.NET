@@ -1,0 +1,183 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TokenManagementService", "TokenManagementService", "{3BC9436C-1600-4A92-A77E-CD7D94B68A12}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		ProjectReferences = ""
+		Debug.AspNetCompiler.VirtualPath = "/localhost_9724"
+		Debug.AspNetCompiler.PhysicalPath = "TokenManagementService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9724\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_9724"
+		Release.AspNetCompiler.PhysicalPath = "TokenManagementService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9724\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "9724"
+		SlnRelativePath = "TokenManagementService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyClient", "DummyClient\DummyClient.csproj", "{AFF06AAC-928D-4167-B030-FC16AC7794AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{75694016-F1E1-4670-9C6D-6017BCAE255E} = {75694016-F1E1-4670-9C6D-6017BCAE255E}
+		{3DE45B47-1FEF-4C87-A63B-B3536432A939} = {3DE45B47-1FEF-4C87-A63B-B3536432A939}
+		{3BC9436C-1600-4A92-A77E-CD7D94B68A12} = {3BC9436C-1600-4A92-A77E-CD7D94B68A12}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Decipher", "Decipher", "{3DE45B47-1FEF-4C87-A63B-B3536432A939}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{6ff1b795-aa6f-4432-89c2-466c76016d16}|CommonContracts.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_18795"
+		Debug.AspNetCompiler.PhysicalPath = "Decipher\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_18795\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_18795"
+		Release.AspNetCompiler.PhysicalPath = "Decipher\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_18795\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "18795"
+		SlnRelativePath = "Decipher\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{75694016-F1E1-4670-9C6D-6017BCAE255E} = {75694016-F1E1-4670-9C6D-6017BCAE255E}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EmergencyMsmq", "EmergencyMsmq", "{75694016-F1E1-4670-9C6D-6017BCAE255E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{6ff1b795-aa6f-4432-89c2-466c76016d16}|CommonContracts.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5161"
+		Debug.AspNetCompiler.PhysicalPath = "EmergencyMsmq\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5161\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5161"
+		Release.AspNetCompiler.PhysicalPath = "EmergencyMsmq\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5161\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5161"
+		SlnRelativePath = "EmergencyMsmq\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonContracts", "CommonContracts\CommonContracts.csproj", "{6FF1B795-AA6F-4432-89C2-466C76016D16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentWpfClient", "AgentWpfClient\AgentWpfClient.csproj", "{8862F88F-6A52-4809-BED0-97B115D63593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentGeneration", "DocumentGeneration\DocumentGeneration.csproj", "{5745128F-BF5E-4A1A-BE62-E94C4089A1C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XorBreakerStandalone", "XorBreakerStandalone\XorBreakerStandalone.csproj", "{F88BE1CB-F235-4315-A658-079CC6883224}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BC9436C-1600-4A92-A77E-CD7D94B68A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC9436C-1600-4A92-A77E-CD7D94B68A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BC9436C-1600-4A92-A77E-CD7D94B68A12}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BC9436C-1600-4A92-A77E-CD7D94B68A12}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AFF06AAC-928D-4167-B030-FC16AC7794AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF06AAC-928D-4167-B030-FC16AC7794AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF06AAC-928D-4167-B030-FC16AC7794AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF06AAC-928D-4167-B030-FC16AC7794AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE45B47-1FEF-4C87-A63B-B3536432A939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE45B47-1FEF-4C87-A63B-B3536432A939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE45B47-1FEF-4C87-A63B-B3536432A939}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE45B47-1FEF-4C87-A63B-B3536432A939}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{75694016-F1E1-4670-9C6D-6017BCAE255E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75694016-F1E1-4670-9C6D-6017BCAE255E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75694016-F1E1-4670-9C6D-6017BCAE255E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{75694016-F1E1-4670-9C6D-6017BCAE255E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6FF1B795-AA6F-4432-89C2-466C76016D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF1B795-AA6F-4432-89C2-466C76016D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF1B795-AA6F-4432-89C2-466C76016D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF1B795-AA6F-4432-89C2-466C76016D16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8862F88F-6A52-4809-BED0-97B115D63593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8862F88F-6A52-4809-BED0-97B115D63593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8862F88F-6A52-4809-BED0-97B115D63593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8862F88F-6A52-4809-BED0-97B115D63593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5745128F-BF5E-4A1A-BE62-E94C4089A1C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5745128F-BF5E-4A1A-BE62-E94C4089A1C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5745128F-BF5E-4A1A-BE62-E94C4089A1C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5745128F-BF5E-4A1A-BE62-E94C4089A1C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88BE1CB-F235-4315-A658-079CC6883224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88BE1CB-F235-4315-A658-079CC6883224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88BE1CB-F235-4315-A658-079CC6883224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88BE1CB-F235-4315-A658-079CC6883224}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://daemontoolz.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = TokenManagementService
+		SccProjectName1 = TokenManagementService
+		SccLocalPath1 = TokenManagementService
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = DummyClient\\DummyClient.csproj
+		SccProjectName2 = DummyClient
+		SccLocalPath2 = DummyClient
+		SccWebProject3 = true
+		SccProjectUniqueName3 = Decipher
+		SccProjectName3 = Decipher
+		SccLocalPath3 = Decipher
+		SccProjectEnlistmentChoice3 = 2
+		SccWebProject4 = true
+		SccProjectUniqueName4 = EmergencyMsmq
+		SccProjectName4 = EmergencyMsmq
+		SccLocalPath4 = EmergencyMsmq
+		SccProjectEnlistmentChoice4 = 2
+		SccProjectUniqueName5 = CommonContracts\\CommonContracts.csproj
+		SccProjectName5 = CommonContracts
+		SccLocalPath5 = CommonContracts
+		SccProjectUniqueName6 = AgentWpfClient\\AgentWpfClient.csproj
+		SccProjectName6 = AgentWpfClient
+		SccLocalPath6 = AgentWpfClient
+		SccProjectUniqueName7 = DocumentGeneration\\DocumentGeneration.csproj
+		SccProjectName7 = DocumentGeneration
+		SccLocalPath7 = DocumentGeneration
+		SccProjectUniqueName8 = XorBreakerStandalone\\XorBreakerStandalone.csproj
+		SccProjectName8 = XorBreakerStandalone
+		SccLocalPath8 = XorBreakerStandalone
+	EndGlobalSection
+EndGlobal

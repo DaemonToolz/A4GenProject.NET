@@ -1,0 +1,10 @@
+﻿<Application x:Class="AgentWpfClient.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AgentWpfClient"
+             xmlns:converters="clr-namespace:AgentWpfClient.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <converters:CheckboxConverter x:Key="CheckboxConverter"/>
+    </Application.Resources>
+</Application>

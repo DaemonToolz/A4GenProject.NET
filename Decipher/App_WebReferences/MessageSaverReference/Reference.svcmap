@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="39cc15f6-609b-4db2-985b-9af490896f5c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://pc-axel:20200/EmergencyMessageSave/EmergencyMessageSave.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="6840f79d-6198-4ba8-b606-fdc006dcade1" SourceId="1" SourceUrl="net.tcp://pc-axel:20200/EmergencyMessageSave/EmergencyMessageSave.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="c0703845-b9f6-4ac1-961a-d7312ea35459" SourceId="1" SourceUrl="net.tcp://pc-axel:20200/EmergencyMessageSave/EmergencyMessageSave.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="df4f0ca0-e0f9-49a1-8768-d5ef00836d60" SourceId="1" SourceUrl="net.tcp://pc-axel:20200/EmergencyMessageSave/EmergencyMessageSave.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

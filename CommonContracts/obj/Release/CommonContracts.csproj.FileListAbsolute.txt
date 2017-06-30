@@ -1,0 +1,14 @@
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Release\CommonContracts.dll.config
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Release\CommonContracts.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Release\CommonContracts.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Release\CommonContracts.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Release\CommonContracts.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\obj\Release\CommonContracts.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Release\CommonContracts.dll.CodeAnalysisLog.xml
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\CommonContracts\bin\Release\CommonContracts.dll.lastcodeanalysissucceeded
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\bin\Release\CommonContracts.dll.config
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\bin\Release\CommonContracts.dll
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\bin\Release\CommonContracts.pdb
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\obj\Release\CommonContracts.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\obj\Release\CommonContracts.dll
+C:\Users\macie\Source\Repos\GenProject2\CommonContracts\obj\Release\CommonContracts.pdb

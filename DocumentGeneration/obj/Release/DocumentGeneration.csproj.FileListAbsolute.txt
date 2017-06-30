@@ -1,0 +1,9 @@
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentGeneration.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentGeneration.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\obj\Release\DocumentGeneration.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\obj\Release\DocumentGeneration.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\obj\Release\DocumentGeneration.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentGeneration.dll.CodeAnalysisLog.xml
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentGeneration.dll.lastcodeanalysissucceeded
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentFormat.OpenXml.dll
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DocumentGeneration\bin\Release\DocumentFormat.OpenXml.xml

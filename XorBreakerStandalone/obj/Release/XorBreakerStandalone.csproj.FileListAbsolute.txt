@@ -1,0 +1,8 @@
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\bin\Release\XorBreakerStandalone.exe.config
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\bin\Release\XorBreakerStandalone.exe
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\bin\Release\XorBreakerStandalone.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\obj\Release\XorBreakerStandalone.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\obj\Release\XorBreakerStandalone.exe
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\obj\Release\XorBreakerStandalone.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\bin\Release\XorBreakerStandalone.exe.CodeAnalysisLog.xml
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\XorBreakerStandalone\bin\Release\XorBreakerStandalone.exe.lastcodeanalysissucceeded

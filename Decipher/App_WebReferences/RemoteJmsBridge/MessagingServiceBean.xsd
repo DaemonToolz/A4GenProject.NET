@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://facade.messagemgmt.crypt.com/" targetNamespace="http://facade.messagemgmt.crypt.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="messageOperation" type="tns:messageOperation" />
+  <xs:element name="messageOperationResponse" type="tns:messageOperationResponse" />
+  <xs:complexType name="messageOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+      <xs:element minOccurs="0" name="key" type="xs:string" />
+      <xs:element minOccurs="0" name="nameFile" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="messageOperationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d72e88a0-c3f7-471d-828f-7146647d69f4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:15330/DecipherService/DecipherService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DecipherService.xsd" MetadataType="Schema" ID="65b2c8f7-064a-4d87-8a2d-c0fee28a183b" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DecipherService1.xsd" MetadataType="Schema" ID="eb82b360-4bf0-4ea8-9276-30488ecabc49" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DecipherService2.xsd" MetadataType="Schema" ID="918d98fb-825a-4995-b6c0-055635688120" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?xsd=xsd2" />
+    <MetadataFile FileName="DecipherService.disco" MetadataType="Disco" ID="39ec3139-8718-4bab-b9f9-72c8493a6f5e" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?disco" />
+    <MetadataFile FileName="DecipherService3.xsd" MetadataType="Schema" ID="4132ec68-4ec9-498d-9648-28aaf985fd58" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DecipherService.wsdl" MetadataType="Wsdl" ID="70e46a57-bd0b-4aec-80db-1a0c10f85332" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?wsdl" />
+    <MetadataFile FileName="DecipherService4.xsd" MetadataType="Schema" ID="85a748f7-0464-4c6b-ad97-dd5aa9c8a991" SourceId="1" SourceUrl="http://localhost:15330/DecipherService/DecipherService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

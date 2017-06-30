@@ -1,0 +1,111 @@
+﻿<Page x:Class="AgentWpfClient.DecipheringPag"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AgentWpfClient"
+      mc:Ignorable="d"
+      Title="DecipheringPag" Height="450" Width="520">
+
+    <Grid Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="BackBtn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" HorizontalContentAlignment="Center" Click="BackBtn_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="GridWrapperBorder" BorderBrush="White">
+                        <Grid Name="GridWrapper" Background="White">
+                            <Image Name="BackImage" Source="Images/BackBtn.png" Width="35" Height="35" Stretch="Uniform"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="GridWrapper" Property="Background" Value="#FFEBE7E7" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderBrush" Value="#FFE8E8E8" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="DocumentTitle" Content="Document" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="100" Height="37" VerticalContentAlignment="Center"/>
+        <Button x:Name="FileLoaderButton" HorizontalAlignment="Left" Margin="474,160,0,0" VerticalAlignment="Top" Width="36" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" Click="FileLoaderButton_Click" Height="37">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="GridWrapperBorder" BorderBrush="White">
+                        <Grid Name="GridWrapper" Background="White">
+                            <Image Name="BackImage" Source="Images/UploadFile.png" Width="30" Height="30" Stretch="Uniform"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="GridWrapper" Property="Background" Value="#FFEBE7E7" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderBrush" Value="#FFE8E8E8" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
+
+        <TextBox x:Name="FileContentViewer" HorizontalAlignment="Left" Height="95" Margin="10,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" IsReadOnly="True"/>
+        <TextBlock TextWrapping="WrapWithOverflow" x:Name="DocumentTitleLabel" HorizontalAlignment="Left" Margin="115,160,0,0" VerticalAlignment="Top" Width="354" Height="37">
+
+        </TextBlock>
+        <Button x:Name="SendFileBtn" Content="Envoyer le contenu du fichier" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="500" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" IsEnabled="False" Click="SendFileBtn_Click"/>
+        <Label x:Name="DecryptTitle" Content="Décryptage" HorizontalAlignment="Left" Margin="10,323,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="DecryptStatus" Content="Non lancé" HorizontalAlignment="Left" Margin="115,323,0,0" VerticalAlignment="Top" Width="337"/>
+
+        <Label x:Name="ContactMailLabel" Content="Votre email" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="26" Margin="115,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" BorderBrush="White" VerticalContentAlignment="Center"/>
+        <Label x:Name="WarningMessage" Visibility="Hidden"  Content="Email invalide" HorizontalAlignment="Left" Margin="393,45,0,0" VerticalAlignment="Top" Width="115" Foreground="Red"/>
+        <TextBox x:Name="KeyBeginTextBox" HorizontalAlignment="Left" Height="25" Margin="115,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="White" VerticalContentAlignment="Center"/>
+        <Label x:Name="KeyBeginlabel" Content="Début clé (Opt)" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="KeySizeTextBox" HorizontalAlignment="Left" Height="26" Margin="395,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" BorderBrush="White" VerticalContentAlignment="Center"/>
+        <Label x:Name="KeySizeLabel" Content="Taille clé (Opt)" HorizontalAlignment="Left" Margin="278,70,0,0" VerticalAlignment="Top" Width="110"/>
+        <ComboBox x:Name="CipheringTypeCombobox" Background="White"  ItemsSource="{Binding Path=CipheringTypes}" HorizontalAlignment="Left" Margin="115,129,0,0" VerticalAlignment="Top" Width="393" Height="26" BorderBrush="White">
+            <ComboBox.ItemContainerStyle>
+                <Style TargetType="ComboBoxItem">
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                </Style>
+            </ComboBox.ItemContainerStyle>
+
+        </ComboBox>
+        <Label x:Name="CipheringTypeLabel" Content="Chiffrement" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="100"/>
+        <local:LoadingSpinner x:Name="WaitingSpinner" HorizontalAlignment="Left" Height="85" Margin="220,210,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="KeyEndLabel" Content="Fin de clé (Opt)" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="KeyEndTextBox" HorizontalAlignment="Left" Height="25" Margin="115,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="White" VerticalContentAlignment="Center"/>
+
+        <!-- ="{Binding Values[]['Percentage']}" -->
+        <Label x:Name="DecipheringPercentage" HorizontalAlignment="Left" Margin="115,349,0,0" VerticalAlignment="Top" Width="150" Height="25"/>
+        <Label x:Name="DecipheringPercentageLabel" Content="Pourcentage" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="DecipheringRoundsLabel" Content="Clés tentées" HorizontalAlignment="Left" Margin="10,374,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="DecipheringRounds"  HorizontalAlignment="Left" Margin="115,374,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
+        <Label x:Name="DecipheringETALabel" Content="Opérations estimées" HorizontalAlignment="Left" Margin="278,374,0,0" VerticalAlignment="Top" Width="122"/>
+        <Label x:Name="DecipheringETA" HorizontalAlignment="Left" Margin="405,374,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <Button IsEnabled="False" x:Name="GenerateTextFile" HorizontalAlignment="Left" Margin="457,324,0,0" VerticalAlignment="Top" Width="51" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" Click="GenerateTextFile_Click" Height="51">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="GridWrapperBorder" BorderBrush="White">
+                        <Grid x:Name="GridWrapper" Background="White">
+                            <Image x:Name="BackImage" Source="Images/Download.png" Width="40" Height="40" Stretch="Uniform"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="GridWrapper" Property="Background" Value="#FFEBE7E7" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderBrush" Value="#FFE8E8E8" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+
+        </Button>
+
+    </Grid>
+</Page>

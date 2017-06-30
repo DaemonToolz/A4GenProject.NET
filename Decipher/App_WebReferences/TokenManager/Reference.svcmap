@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0565acb5-e20c-45f2-a633-598b9bb6f068" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:16449/TokenManagementService/TokenGenerationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TokenGenerationService.disco" MetadataType="Disco" ID="b704cdf3-1510-49c3-975a-22a0e7b0499a" SourceId="1" SourceUrl="http://localhost:16449/TokenManagementService/TokenGenerationService.svc?disco" />
+    <MetadataFile FileName="TokenGenerationService.wsdl" MetadataType="Wsdl" ID="3b21096a-b46b-4324-b74a-b53444bb4b9a" SourceId="1" SourceUrl="http://localhost:16449/TokenManagementService/TokenGenerationService.svc?wsdl" />
+    <MetadataFile FileName="TokenGenerationService.xsd" MetadataType="Schema" ID="d4c10ea2-bad4-43c9-a096-1632c10beee6" SourceId="1" SourceUrl="http://localhost:16449/TokenManagementService/TokenGenerationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TokenGenerationService1.xsd" MetadataType="Schema" ID="d08495fd-e469-4389-806e-223a0a51bd6a" SourceId="1" SourceUrl="http://localhost:16449/TokenManagementService/TokenGenerationService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

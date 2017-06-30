@@ -1,0 +1,7 @@
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\bin\Release\DummyClient.exe.config
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\bin\Release\DummyClient.exe
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\bin\Release\DummyClient.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\obj\Release\DummyClient.exe
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\obj\Release\DummyClient.pdb
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\obj\Release\DummyClient.csprojResolveAssemblyReference.cache
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\DummyClient\bin\Release\DocX.dll
