@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\macie\Source\Workspaces\Workspace\GenProject\AgentWpfClient\obj\Debug\
+C:\Users\macie\Source\Repos\A4GenProject\A4GenProject.NET\AgentWpfClient\obj\Debug\
 AgentWpfClient
 none
 false
 DEBUG;TRACE
-C:\Users\macie\Source\Workspaces\Workspace\GenProject\AgentWpfClient\App.xaml
-11151548125
+C:\Users\macie\Source\Repos\A4GenProject\A4GenProject.NET\AgentWpfClient\App.xaml
+61069547654
 
-9-1439686929
-13738642453
-MainWindow.xaml;
+211012640186
+1565644642
+CategorySelection.xaml;DecipheringPage.xaml;LoadingSpinner.xaml;MainWindow.xaml;OptionsPage.xaml;UpdateCredentials.xaml;
 
-False
+True
 
