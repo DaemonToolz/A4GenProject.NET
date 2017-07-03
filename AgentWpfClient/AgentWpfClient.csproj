@@ -266,6 +266,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Callbacks\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\DecipheringProgressService\DecipheringProcessUpdater.disco" />
@@ -284,6 +285,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SendFileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SaveSettings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HideWindow.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

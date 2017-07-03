@@ -63,14 +63,43 @@ namespace AgentWpfClient
                 {
                     Dispatcher.Invoke((Action)(() =>
                     {
-                        if (TokenGenerator != null)
-                            TokenGenerator.Close();
-                        TokenGenerator = new TokenGenerationServiceClient();
-                        TokenGenerator.ClientCredentials.UserName.UserName = UserName.Text;
-                        TokenGenerator.ClientCredentials.UserName.Password = !PasswordBox.Password.Equals(UserCredentials.DefaultPasswordProtected) ? PasswordBox.Password : PasswordProtection.Unprotect(PasswordBox.Password);
-                        TokenGenerator.Open();
+
+                        int DispatcherFailedAttempts = 0;
+                        while (DispatcherFailedAttempts++ < 5){
+                            try
+                            {
+                                if (TokenGenerator != null)
+                                    TokenGenerator.Close();
+                                TokenGenerator = new TokenGenerationServiceClient();
+                                TokenGenerator.ClientCredentials.UserName.UserName = UserName.Text;
+                                TokenGenerator.ClientCredentials.UserName.Password = !PasswordBox.Password.Equals(UserCredentials.DefaultPasswordProtected) ? PasswordBox.Password : PasswordProtection.Unprotect(PasswordBox.Password);
+                                TokenGenerator.Open();
+                                break;
+                            }
+                            catch
+                            {
+                                
+                            }
+                        }
+                        if (DispatcherFailedAttempts == 5)
+                            throw new Exception("Impossible de se connecter au services des tokens");
                     }));
-                    UserCredentials.GeneratedToken = TokenGenerator.GenerateToken();
+
+                    int TaskFailedAttempts = 0;
+                    while (TaskFailedAttempts++ < 5)
+                    {
+                        try
+                        {
+                            UserCredentials.GeneratedToken = TokenGenerator.GenerateToken();
+                        }
+                        catch
+                        {
+
+                        }
+                    }
+                    if (TaskFailedAttempts == 5)
+                        throw new Exception("Impossible d'utiliser le service des tokens, veuillez réessayer plus tard");
+
                     Dispatcher.Invoke((Action)(() =>
                     {
                         TokenGenerator.Close();

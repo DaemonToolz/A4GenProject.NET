@@ -8,9 +8,6 @@
       Title="DecipheringPag" Height="450" Width="520">
 
     <Grid Background="White" >
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
         <Button x:Name="BackBtn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="45" HorizontalContentAlignment="Center" Click="BackBtn_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -51,13 +48,30 @@
         </Button>
 
 
-        <TextBox x:Name="FileContentViewer" HorizontalAlignment="Left" Height="95" Margin="10,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" IsReadOnly="True"/>
+        <TextBox x:Name="FileContentViewer" HorizontalAlignment="Left" Height="118" Margin="8,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" IsReadOnly="True"/>
         <TextBlock TextWrapping="WrapWithOverflow" x:Name="DocumentTitleLabel" HorizontalAlignment="Left" Margin="115,160,0,0" VerticalAlignment="Top" Width="354" Height="37">
 
         </TextBlock>
-        <Button x:Name="SendFileBtn" Content="Envoyer le contenu du fichier" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="500" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" IsEnabled="False" Click="SendFileBtn_Click"/>
+        <Button x:Name="SendFileBtn"  HorizontalAlignment="Left" Margin="474,202,0,0" VerticalAlignment="Top" Width="34" Height="34"  BorderBrush="White" Background="White" HorizontalContentAlignment="Center" IsEnabled="False" Click="SendFileBtn_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="GridWrapperBorder" BorderBrush="White">
+                        <Grid x:Name="GridWrapper" Background="White">
+                            <Image x:Name="BackImage" Source="Images/SendFileIcon.png" Width="25" Height="25" Stretch="Uniform"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="GridWrapper" Property="Background" Value="#FFEBE7E7" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderBrush" Value="#FFE8E8E8" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
         <Label x:Name="DecryptTitle" Content="Décryptage" HorizontalAlignment="Left" Margin="10,323,0,0" VerticalAlignment="Top" Width="90"/>
-        <Label x:Name="DecryptStatus" Content="Non lancé" HorizontalAlignment="Left" Margin="115,323,0,0" VerticalAlignment="Top" Width="337"/>
+        <Label x:Name="DecryptStatus" Content="Non lancé" HorizontalAlignment="Left" Margin="115,323,0,0" VerticalAlignment="Top" Width="393"/>
 
         <Label x:Name="ContactMailLabel" Content="Votre email" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="26" Margin="115,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" BorderBrush="White" VerticalContentAlignment="Center"/>
@@ -76,7 +90,7 @@
 
         </ComboBox>
         <Label x:Name="CipheringTypeLabel" Content="Chiffrement" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="100"/>
-        <local:LoadingSpinner x:Name="WaitingSpinner" HorizontalAlignment="Left" Height="85" Margin="220,210,0,0" VerticalAlignment="Top" Width="85"/>
+        <local:LoadingSpinner x:Name="WaitingSpinner" HorizontalAlignment="Left" Height="85" Margin="198,220,0,0" VerticalAlignment="Top" Width="85"/>
         <Label x:Name="KeyEndLabel" Content="Fin de clé (Opt)" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="KeyEndTextBox" HorizontalAlignment="Left" Height="25" Margin="115,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="White" VerticalContentAlignment="Center"/>
 
@@ -87,12 +101,12 @@
         <Label x:Name="DecipheringRounds"  HorizontalAlignment="Left" Margin="115,374,0,0" VerticalAlignment="Top" Width="150" Height="26"/>
         <Label x:Name="DecipheringETALabel" Content="Opérations estimées" HorizontalAlignment="Left" Margin="278,374,0,0" VerticalAlignment="Top" Width="122"/>
         <Label x:Name="DecipheringETA" HorizontalAlignment="Left" Margin="405,374,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <Button IsEnabled="False" x:Name="GenerateTextFile" HorizontalAlignment="Left" Margin="457,324,0,0" VerticalAlignment="Top" Width="51" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" Click="GenerateTextFile_Click" Height="51">
+        <Button IsEnabled="False" x:Name="GenerateTextFile" HorizontalAlignment="Left" Margin="474,236,0,0" VerticalAlignment="Top" Width="34" BorderBrush="White" Background="White" HorizontalContentAlignment="Center" Click="GenerateTextFile_Click" Height="34">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border x:Name="GridWrapperBorder" BorderBrush="White">
                         <Grid x:Name="GridWrapper" Background="White">
-                            <Image x:Name="BackImage" Source="Images/Download.png" Width="40" Height="40" Stretch="Uniform"/>
+                            <Image x:Name="BackImage" Source="Images/Download.png" Width="25" Height="25" Stretch="Uniform"/>
                         </Grid>
                     </Border>
                     <ControlTemplate.Triggers>

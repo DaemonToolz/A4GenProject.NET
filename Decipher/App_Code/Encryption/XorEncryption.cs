@@ -11,6 +11,7 @@ namespace Encryption.Symmetric.Basic
     /// </summary>
     /// 
     [Serializable]
+    [Obsolete]
     public class XorEncryption : IBasicDecryption
     {
 

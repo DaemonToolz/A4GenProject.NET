@@ -53,17 +53,34 @@
                     <CheckBox x:Name="DefaultCheckbox" Content="Utiliser les paramètres généraux, par défaut" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="418"/>
                     <Grid x:Name="GlobalSettings" HorizontalAlignment="Left" Height="248" Margin="10,44,0,0" VerticalAlignment="Top" Width="430" >
 
-                        <Label x:Name="DefaultPathLabel" Content="Chemin par défaut" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-                        <TextBox x:Name="DefaultPathTextBox" HorizontalAlignment="Left" Height="26" Margin="124,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" VerticalContentAlignment="Center" SelectionBrush="#FFDAE1E7" BorderThickness="1,0,0,0" BorderBrush="#FFB1B1B1" Background="White"/>
-                        <Label x:Name="DefaultEmailLabel" Content="Email par défaut" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
-                        <TextBox x:Name="DefaultEmailTextBox" HorizontalAlignment="Left" Height="26" Margin="124,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" VerticalContentAlignment="Center" SelectionBrush="#FFDAE1E7" BorderThickness="1,0,0,0" BorderBrush="#FFB1B1B1" Background="White"/>
+                        <Label x:Name="DefaultPathLabel" Content="Chemin par défaut" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="DefaultPathTextBox" HorizontalAlignment="Left" Height="48" Margin="124,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" VerticalContentAlignment="Center" SelectionBrush="#FFDAE1E7" BorderThickness="1,0,0,0" BorderBrush="#FFB1B1B1" Background="White"/>
+                        <Label x:Name="DefaultEmailLabel" Content="Email par défaut" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+                        <TextBox x:Name="DefaultEmailTextBox" HorizontalAlignment="Left" Height="26" Margin="124,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" VerticalContentAlignment="Center" SelectionBrush="#FFDAE1E7" BorderThickness="1,0,0,0" BorderBrush="#FFB1B1B1" Background="White"/>
 
                     </Grid>
                 </Grid>
             </TabItem>
 
         </TabControl>
-        <Button x:Name="SaveChangesBtn" Content="Sauvegarder" HorizontalAlignment="Left" Margin="435,41,0,0" VerticalAlignment="Top" Width="75" Background="{x:Null}" BorderBrush="{x:Null}" Click="SaveChangesBtn_Click"/>
+        <Button x:Name="SaveChangesBtn" HorizontalAlignment="Left" Margin="480,25,0,0" VerticalAlignment="Top" Width="40" Height="40" Background="{x:Null}" BorderBrush="{x:Null}" Click="SaveChangesBtn_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="GridWrapperBorder" BorderBrush="White">
+                        <Grid Name="GridWrapper" Background="White">
+                            <Image Name="BackImage" Source="Images/SaveSettings.png" Width="35" Height="35" Stretch="Uniform"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="GridWrapper" Property="Background" Value="#FFEBE7E7" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderBrush" Value="#FFE8E8E8" />
+                            <Setter TargetName="GridWrapperBorder" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Page>

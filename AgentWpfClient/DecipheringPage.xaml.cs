@@ -188,22 +188,26 @@ namespace AgentWpfClient{
         public void Progress(string FileName, decimal Rounds, decimal TotalPossibilities, decimal Percentage){
             Dispatcher.Invoke((Action)(() =>
             {
-                if (FileName.Equals(File.FileName))
+                if (FileName.Equals(File.FileName) && Rounds != TotalPossibilities)
                     DecryptStatus.Content = "Déchiffrement démarré";
+                else if (FileName.Equals(File.FileName) && Rounds == TotalPossibilities)
+                    DecryptStatus.Content = "Validation du déchiffrement en cours";
                 else
                     DecryptStatus.Content = FileName;
                 DecipheringRounds.Content = Rounds;
                 DecipheringETA.Content = TotalPossibilities;
-                DecipheringPercentage.Content = Percentage;
+                DecipheringPercentage.Content = Percentage + "%";
 
             }));
         }
 
         private void GenerateTextFile_Click(object sender, RoutedEventArgs e){
-            System.IO.File.WriteAllLines(String.Format(@"./Deciphering_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmss")), new String[]{
-                    String.Format("File: {0} {1}", File.FileName),
-                    String.Format("To: {0} {1}", File.ContactEmail),
-                    String.Format("Algorithm: {0} {1}", File.Algorithm),
+            try
+            {
+                System.IO.File.WriteAllLines(String.Format(@"./Deciphering_{0}.txt", DateTime.Now.ToString("yyyyMMddHHmmss")), new String[]{
+                    String.Format("File: {0}", File.FileName),
+                    String.Format("To: {0}", File.ContactEmail),
+                    String.Format("Algorithm: {0}", File.Algorithm),
                     String.Format("Key Size: {0}", File.KeySize),
                     "------------ ORIGINAL INPUT ------------------------------",
                     String.Format("Ciphered Text: {0}", File.CipheredFileContent),
@@ -213,7 +217,10 @@ namespace AgentWpfClient{
                     String.Format("Deciphered Text: {0}", Response.DecipheredText),
                     "------------ END RESPONSE --------------------------------",
                 });
-
+            } catch(Exception ex)
+            {
+                FileContentViewer.Text = Response.DecipheredText + Environment.NewLine + String.Format("Impossible de générer le fichier car {0}", ex.Message);
+            }
             GenerateTextFile.IsEnabled = false;
 
         }

@@ -43,6 +43,10 @@ namespace AgentWpfClient
             NavigationFrame.Visibility = Visibility.Visible;
         }
 
+        /// <summary>
+        /// Met à jour toutes les informations 
+        /// 
+        /// </summary>
         internal void UpdateAllData(){
 
             if (OptionsPage.UserConfiguration.UseAppSecuritySettings)
@@ -72,6 +76,10 @@ namespace AgentWpfClient
             NavigationFrame.Visibility = Visibility.Visible;
         }
 
+        /// <summary>
+        /// Vérifie si le token n'a pas expiré
+        /// </summary>
+        /// <param name="ForceUpdate"></param>
         public void CheckStatus(bool ForceUpdate = false){
             if (UpdateCredentials.UserCredentials.GeneratedToken == null)
             {
@@ -89,6 +97,10 @@ namespace AgentWpfClient
 
         }
 
+        /// <summary>
+        /// Durée restante pour le token
+        /// </summary>
+        /// <param name="ForceStop"></param>
         private void StartCountdown(bool ForceStop = false){
             if (ForceStop)
             {
@@ -120,20 +132,33 @@ namespace AgentWpfClient
             InitializeComponent();
 
             NavigationPanel.Add("Options", new OptionsPage());
-            
-            NavigationPanel.Add("ChangeCredential", new UpdateCredentials());
-            
+           
+                try {
+                    NavigationPanel.Add("ChangeCredential", new UpdateCredentials());
 
-            NavigationPanel.Add("DecipherData", new DecipheringPag());
-            Thread.Sleep(50);
-            UpdateAllData();
-            CheckStatus();
+                    ChangeCred.IsEnabled = true;
+           
+                    NavigationPanel.Add("DecipherData", new DecipheringPag());
+
+                    Thread.Sleep(50);   // Évite quelques bugs
+
+                    UpdateAllData();
+                    CheckStatus();
+                }
+                catch (Exception e){
+                    //ChangeCred.IsEnabled = false;
+                    //SendCiphered.IsEnabled = false;
+                    Instruction.Content = String.Format("Impossible de contacter le serveur distant car {0}", e.Message) ;                 
+                }
+
         }
 
         private void MenuBar_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.ChangedButton == MouseButton.Left)
                 DragMove();
+
+            
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e){
@@ -158,6 +183,10 @@ namespace AgentWpfClient
 
             NavigationFrame.Navigate(NavigationPanel["Options"]);
             NavigationFrame.Visibility = Visibility.Visible;
+        }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e){
+            WindowState = WindowState.Minimized;
         }
     }
 }

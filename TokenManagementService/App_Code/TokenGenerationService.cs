@@ -17,7 +17,7 @@ using System.Threading;
 using System.IO;
 
 // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "TokenGenerationService" in code, svc and config file together.
-[ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Multiple)]
+[ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall, ConcurrencyMode = ConcurrencyMode.Multiple)]
 public class TokenGenerationService : ITokenGenerationService, ITokenValidationService{
 
     #region Common

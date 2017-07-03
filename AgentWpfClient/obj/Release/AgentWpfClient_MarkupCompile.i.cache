@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\macie\Source\Repos\GenProject2\AgentWpfClient\obj\Release\
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\AgentWpfClient\obj\Release\
 AgentWpfClient
 none
 false
 TRACE
-C:\Users\macie\Source\Repos\GenProject2\AgentWpfClient\App.xaml
+C:\Users\macie\Source\Workspaces\Workspace\GenProject\AgentWpfClient\App.xaml
 61069547654
 
 211012640186
 1565644642
 CategorySelection.xaml;DecipheringPage.xaml;LoadingSpinner.xaml;MainWindow.xaml;OptionsPage.xaml;UpdateCredentials.xaml;
 
-True
+False
 

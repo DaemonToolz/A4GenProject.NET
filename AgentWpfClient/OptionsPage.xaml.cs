@@ -136,7 +136,6 @@ namespace AgentWpfClient
             if (!DefaultProperties.DefaultEmail.Equals(DefaultEmailTextBox.Text))
             {
                 UserConfiguration.DefaultEmail = DefaultProperties.DefaultEmail = DefaultEmailTextBox.Text;
-                MessageBox.Show(DefaultProperties.DefaultEmail);
             }
 
 
