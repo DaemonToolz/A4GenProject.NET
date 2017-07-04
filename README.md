@@ -38,6 +38,7 @@ This is how the overall structure works. To give a technical aspect:
  2. A function name - Belonging to the service you want to invoke
  3. A user token - provided by the Token Managent service
  4. The content you must transmit, in general in an object called ConnectionToken.
+ 
  If the service token does not exist or the function does not belong to the service related to the token, you are ejected. When you provide the User Token, it will directly calls the Token Management Service to ask for a validation of the token. If it expires, you are denied.
 + Once you are done with this authentication thingy, you must create a net.tcp connection with a Windows Authentication and a Basic Message Encryption using a 256B algorithm.
 + You give everything to the server
