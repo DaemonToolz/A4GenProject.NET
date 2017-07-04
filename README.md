@@ -34,11 +34,11 @@ You are a new-comer in a huge society, IT-specialized one of course, and you hav
 This is how the overall structure works. To give a technical aspect:
 + You have to be connected to the Token Management System, using a Username/Password combinations for credentials. This service will first check into a SQL Server database if your credentials exist, if not it will deny you access. Otherwise it will generate a token then check its existence in a second database. If this token is valid, it will create a copy then provides one to you. The expiration time is set up to 00:05:00 minutes. By default, the connection type is WsHttpBinding - Http using WS\-\* Stardards. The remote service will provide a certificate as an element of trust.
 + Once you have passed the authentication process. You must prepare four elements : 
- + A Service token - unique for a service
- + A function name - Belonging to the service you want to invoke
- + A user token - provided by the Token Managent service
- + The content you must transmit, in general in an object called ConnectionToken.
- If the service token does not exist or the function does not belong to the service related to the token, you are ejected.
+ 1. A Service token - unique for a service
+ 2. A function name - Belonging to the service you want to invoke
+ 3. A user token - provided by the Token Managent service
+ 4. The content you must transmit, in general in an object called ConnectionToken.
+ If the service token does not exist or the function does not belong to the service related to the token, you are ejected. When you provide the User Token, it will directly calls the Token Management Service to ask for a validation of the token. If it expires, you are denied.
 + Once you are done with this authentication thingy, you must create a net.tcp connection with a Windows Authentication and a Basic Message Encryption using a 256B algorithm.
 + You give everything to the server
 
